@@ -8,10 +8,12 @@ backup_timestamp=$(date +%s)
 if [ -f ~/.vimrc ]
 then
     cp ~/.vimrc ~/.vimrc.bak.${backup_timestamp}
+    echo "backup ~/.vimrc successfully"
 fi
 if [ -d ~/.vim ]
 then
     cp -r ~/.vim ~/.vim.bak.${backup_timestamp}
+    echo "backup ~/.vim/ successfully"
 fi
 
 
